@@ -61,11 +61,7 @@ function filter(arrayOfStrings) {
    // Luego retorna un nuevo arreglo con estos elementos.
    // Tu código:
    let newArray = [];
-   let filter = arrayOfStrings.filter((e) => {
-      if(e[0] === "a") {
-         newArray.push(e);
-      }
-   })
+   arrayOfStrings.filter((e) => e[0] === "a" ? newArray.push(e) : null)
    return newArray;
 }
 
